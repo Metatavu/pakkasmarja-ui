@@ -14,7 +14,11 @@ const Header: React.FC = () => (
     <HeaderToolbar>
       <LogoContainer>
         <img alt="Pakkasmarja logo" src={ PallasmarjaLogoPath }/>
-        <Typography color="primary">
+        <Typography
+          variant="h6"
+          color="primary"
+          sx={{ marginLeft: theme => theme.spacing(1) }}
+        >
           { strings.appTitle }
         </Typography>
       </LogoContainer>
