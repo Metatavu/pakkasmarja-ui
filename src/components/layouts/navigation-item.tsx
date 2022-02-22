@@ -1,7 +1,7 @@
 import React from "react";
-import { ListItemText } from "@mui/material";
 import { NavigationButton } from "styled/layouts/navigation-item";
 import { useResolvedPath, useMatch, useNavigate } from "react-router-dom";
+import { ListItemText } from "@mui/material";
 
 /**
  * Component properties
@@ -13,7 +13,7 @@ interface Props {
 }
 
 /**
- * Side panel navigation item component
+ * Navigation item component
  *
  * @param props component properties
  */
@@ -36,7 +36,7 @@ const NavigationItem: React.FC<Props> = ({
       selected={ match !== null }
       onClick={ () => navigate(to) }
     >
-      <ListItemText sx={{ color: "#000" }} primary={ title }/>
+      <ListItemText primary={ title }/>
     </NavigationButton>
   );
 };

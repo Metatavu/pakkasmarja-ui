@@ -21,7 +21,8 @@
     "news": "Uutiset",
     "databank": "Tietopankki",
     "help": "Apua",
-    "account": "Tili"
+    "account": "Tili",
+    "logout": "Kirjautua ulos"
   }
 
 }

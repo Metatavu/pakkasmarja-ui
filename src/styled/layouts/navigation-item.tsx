@@ -12,10 +12,12 @@ export const NavigationButton = styled(ListItemButton, {
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(1),
     paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2)
+    paddingRight: theme.spacing(2),
+    color: "#000"
   },
   "&.Mui-selected": {
-    borderBottom: `2px solid ${theme.palette.primary.main}`
+    borderBottom: `2px solid ${theme.palette.primary.main}`,
+    color: theme.palette.primary.main
   }
 }));
 

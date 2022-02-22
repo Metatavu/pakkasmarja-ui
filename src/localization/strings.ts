@@ -41,6 +41,7 @@ export interface Localized extends LocalizedStringsMethods {
     databank: string;
     help: string;
     account: string;
+    logout: string;
   };
 }
 
