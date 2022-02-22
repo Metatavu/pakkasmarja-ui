@@ -1,11 +1,15 @@
 import LocalizedStrings, { LocalizedStringsMethods } from "localized-strings";
-import en from "./en.json";
 import fi from "./fi.json";
 
 /**
  * Localized strings
  */
 export interface Localized extends LocalizedStringsMethods {
+
+  /**
+   * App title translation
+   */
+  appTitle: string;
 
   /**
    * Translations related to generic words
@@ -26,11 +30,17 @@ export interface Localized extends LocalizedStringsMethods {
     title: string;
   };
 
+  /**
+   * Translations related to navigation
+   */
+  navigation: {
+
+  };
 }
 
 /**
  * Initialized localized strings
  */
-const strings: Localized = new LocalizedStrings({ en: en, fi: fi });
+const strings: Localized = new LocalizedStrings({ fi: fi });
 
 export default strings;

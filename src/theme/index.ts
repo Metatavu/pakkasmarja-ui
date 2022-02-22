@@ -12,59 +12,70 @@ export default createTheme({
 
   palette: {
     primary: {
-      main: "#000000"
+      main: "#E51D2A",
+      light: "#FF5E54",
+      dark: "#AA0001",
+      contrastText: "#ffffff"
     },
     secondary: {
-      main: "#F9473B",
-      light: "#39a849"
+      main: "#2A4269",
+      light: "#586D97",
+      dark: "#001C3E",
+      contrastText: "#ffffff"
     },
     text: {
       primary: "#333333",
       secondary: "#ffffff"
     },
     background: {
-      default: "#E0E0E0",
+      default: "#F7F7F7",
       paper: "#ffffff"
     }
   },
 
   typography: {
     allVariants: {
-      fontFamily: "acumin-pro, sans-serif",
-      fontWeight: 400
+      fontFamily: "Open Sans, sans-serif",
+      fontWeight: 300
     },
     h1: {
-      fontFamily: "ambroise-std, serif",
-      fontWeight: 800,
-      fontSize: 42,
-      letterSpacing: "0.05em",
+      fontSize: 32,
       [breakpoints.down("sm")]: {
         fontSize: "1.75rem"
       }
     },
     h2: {
-      fontFamily: "ambroise-std, serif",
-      fontWeight: 800,
-      fontSize: 30
+      fontSize: 28
     },
     h3: {
-      fontSize: 26
+      fontWeight: "normal",
+      fontSize: 24
     },
     h4: {
+      fontWeight: "normal",
+      fontSize: 24
+    },
+    h5: {
+      fontWeight: "normal",
+      fontSize: 24
+    },
+    h6: {
+      fontWeight: "bold",
       fontSize: 20
     },
     body1: {
-      fontSize: 18
-    },
-    h5: {
       fontSize: 16
     },
-    h6: {
-      fontSize: 12
-    },
     body2: {
-      fontSize: 16,
-      lineHeight: 1.63
+      fontSize: 14
+    },
+    subtitle1: {
+      fontWeight: "normal",
+      fontSize: 16
+    },
+    subtitle2: {
+      fontWeight: 600,
+      fontSize: 14
     }
   },
 
@@ -81,17 +92,18 @@ export default createTheme({
     },
     MuiAppBar: {
       defaultProps: {
-        elevation: 0,
+        elevation: 2,
         position: "fixed"
       },
       styleOverrides: {
         root: {
+          height: 72,
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between"
         },
         colorPrimary: {
-          backgroundColor: "#000"
+          backgroundColor: "#fff"
         }
       }
     },

@@ -6,11 +6,12 @@ import { styled } from "@mui/material/styles";
  */
 export const Root = styled(Box, {
   label: "app-layout--root"
-})(({ theme }) => ({
-  height: "100vh",
+})(() => ({
   width: "100vw",
+  height: "100vh",
   overflow: "hidden",
-  backgroundColor: theme.palette.background.default
+  display: "grid",
+  gridTemplateRows: "auto auto 1fr"
 }));
 
 /**
@@ -19,10 +20,10 @@ export const Root = styled(Box, {
 export const Content = styled(Box, {
   label: "app-layout--content"
 })(({ theme }) => ({
-  backgroundColor: "rgba(218,219,205,0.1)",
   display: "flex",
   flexDirection: "column",
   flex: 1,
   width: "100%",
-  minHeight: `calc(100vh - ${theme.spacing(64)}px)`
+  padding: theme.spacing(3),
+  overflow: "auto"
 }));

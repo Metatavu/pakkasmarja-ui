@@ -1,5 +1,7 @@
+import { Stack } from "@mui/material";
 import React from "react";
 import { Content, Root } from "styled/layouts/app-layout";
+import Header from "./header";
 
 /**
  * App layout component
@@ -9,9 +11,16 @@ import { Content, Root } from "styled/layouts/app-layout";
 const AppLayout: React.FC = ({ children }) => {
   return (
     <Root>
-      <Content>
-        { children }
-      </Content>
+      <Header/>
+      <Stack
+        direction="row"
+        height="100%"
+        overflow="auto"
+      >
+        <Content>
+          { children }
+        </Content>
+      </Stack>
     </Root>
   );
 };

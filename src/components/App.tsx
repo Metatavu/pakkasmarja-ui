@@ -5,6 +5,7 @@ import MainScreen from "components/screens/main-screen";
 import ConfirmHandler from "components/contexts/confirm-handler";
 import ErrorHandler from "components/contexts/error-handler";
 import ApiProvider from "./providers/api-provider";
+import AppLayout from "./layouts/app-layout";
 
 const apiProviders: React.FC<{}>[] = [];
 
@@ -17,12 +18,34 @@ const App: React.FC = () => (
       <ConfirmHandler>
         {/* <AccessTokenRefresh> */}
         <BrowserRouter>
-          <Routes>
-            <Route
-              path="/"
-              element={ <MainScreen/> }
-            />
-          </Routes>
+          <AppLayout>
+            <Routes>
+              <Route
+                path="/"
+                element={ <MainScreen/> }
+              />
+              <Route
+                path="/Deliveries"
+                element={ <MainScreen/> }
+              />
+              <Route
+                path="/Contracts"
+                element={ <MainScreen/> }
+              />
+              <Route
+                path="/News"
+                element={ <MainScreen/> }
+              />
+              <Route
+                path="/Databank"
+                element={ <MainScreen/> }
+              />
+              <Route
+                path="/Help"
+                element={ <MainScreen/> }
+              />
+            </Routes>
+          </AppLayout>
         </BrowserRouter>
         {/* </AccessTokenRefresh> */}
       </ConfirmHandler>
