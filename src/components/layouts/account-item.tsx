@@ -16,7 +16,7 @@ interface Props {
  */
 const AccountItem: React.FC<Props> = () => {
   const dispatch = useAppDispatch();
-  const [ menuAnchor, setMenuAnchor ] = useState<HTMLDivElement | undefined>(undefined);
+  const [ menuAnchor, setMenuAnchor ] = useState<HTMLDivElement>();
 
   /**
    * Renders account menu

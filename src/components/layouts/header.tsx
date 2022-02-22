@@ -10,7 +10,11 @@ import AccountItem from "./account-item";
  * Header component
  */
 const Header: React.FC = () => (
-  <AppBar elevation={ 0 } position="static" sx={{ zIndex: theme => theme.zIndex.drawer + 1 }}>
+  <AppBar
+    elevation={ 0 }
+    position="static"
+    sx={{ zIndex: theme => theme.zIndex.drawer + 1 }}
+  >
     <HeaderToolbar>
       <LogoContainer>
         <img alt="Pakkasmarja logo" src={ PallasmarjaLogoPath }/>

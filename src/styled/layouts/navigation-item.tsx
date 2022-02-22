@@ -22,7 +22,7 @@ export const NavigationButton = styled(ListItemButton, {
 }));
 
 /**
- * Styled navigation button
+ * Styled navigation button icon
  */
 export const NavigationButtonIcon = styled(ListItemIcon, {
   label: "navigation-button-icon"
