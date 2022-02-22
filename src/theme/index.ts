@@ -14,14 +14,12 @@ export default createTheme({
     primary: {
       main: "#E51D2A",
       light: "#FF5E54",
-      dark: "#AA0001",
-      contrastText: "#ffffff"
+      dark: "#AA0001"
     },
     secondary: {
       main: "#2A4269",
       light: "#586D97",
-      dark: "#001C3E",
-      contrastText: "#ffffff"
+      dark: "#001C3E"
     },
     text: {
       primary: "#333333",

@@ -3,12 +3,12 @@ import { Typography } from "@mui/material";
 import strings from "localization/strings";
 
 /**
- * Main screen component
+ * Contracts screen component
  */
-const MainScreen: React.FC = () => {
+const ContractsScreen: React.FC = () => {
   return (
     <Typography>{ strings.generic.notImplemented }</Typography>
   );
 };
 
-export default MainScreen;
+export default ContractsScreen;

@@ -33,8 +33,14 @@ export interface Localized extends LocalizedStringsMethods {
   /**
    * Translations related to navigation
    */
-  navigation: {
-
+  header: {
+    overview: string;
+    deliveries: string;
+    contracts: string;
+    news: string;
+    databank: string;
+    help: string;
+    account: string;
   };
 }
 

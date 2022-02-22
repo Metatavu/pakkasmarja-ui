@@ -14,8 +14,14 @@
     "title": "Error"
   },
 
-  "navigation": {
-
+  "header": {
+    "overview": "Yhteenveto",
+    "deliveries": "Toimitukset",
+    "contracts": "Sopimukset",
+    "news": "Uutiset",
+    "databank": "Tietopankki",
+    "help": "Apua",
+    "account": "Tili"
   }
 
 }
