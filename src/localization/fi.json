@@ -1,4 +1,5 @@
 {
+  "appTitle": "Pakkasmarja",
 
   "generic": {
     "cancel": "Peruuta",
@@ -11,6 +12,17 @@
 
   "errorHandling": {
     "title": "Error"
+  },
+
+  "header": {
+    "overview": "Yhteenveto",
+    "deliveries": "Toimitukset",
+    "contracts": "Sopimukset",
+    "news": "Uutiset",
+    "databank": "Tietopankki",
+    "help": "Apua",
+    "account": "Tili",
+    "logout": "Kirjautua ulos"
   }
 
 }
