@@ -49,7 +49,10 @@ const AccountItem: React.FC<Props> = () => {
       <ListItemButton
         onClick={ ({ currentTarget }) => setMenuAnchor(currentTarget) }
       >
-        <ListItemText sx={{ color: theme.palette.primary.main }} primary={ strings.header.account }/>
+        <ListItemText
+          sx={{ color: theme.palette.primary.main }}
+          primary={ strings.header.account }
+        />
         <ArrowDropDownIcon color="primary"/>
       </ListItemButton>
       { renderAccountMenu() }
