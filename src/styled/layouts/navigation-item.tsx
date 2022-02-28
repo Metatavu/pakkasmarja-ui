@@ -9,10 +9,7 @@ export const NavigationButton = styled(ListItemButton, {
 })(({ theme }) => ({
   padding: theme.spacing(2),
   [theme.breakpoints.up("md")]: {
-    paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2),
+    padding: theme.spacing(1, 2),
     color: "#000"
   },
   "&.Mui-selected": {
