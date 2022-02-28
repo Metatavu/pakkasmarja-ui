@@ -17,7 +17,7 @@ const Header: React.FC = () => (
   >
     <HeaderToolbar>
       <LogoContainer>
-        <img alt="Pakkasmarja logo" src={ PallasmarjaLogoPath }/>
+        <img alt="Pakkasmarja logo" src={ PakkasmarjaLogoPath }/>
         <Typography
           variant="h6"
           color="primary"
