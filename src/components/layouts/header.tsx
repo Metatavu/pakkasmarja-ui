@@ -2,7 +2,7 @@ import { AppBar, Typography, List } from "@mui/material";
 import strings from "localization/strings";
 import React from "react";
 import { LogoContainer, HeaderToolbar } from "styled/layouts/header";
-import PallasmarjaLogoPath from "../../resources/svg/pakkasmarja-logo.svg";
+import PakkasmarjaLogoPath from "../../resources/svg/pakkasmarja-logo.svg";
 import NavigationItem from "./navigation-item";
 import AccountItem from "./account-item";
 
